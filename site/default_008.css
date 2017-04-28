@@ -1,0 +1,29 @@
+.blue { color: rgb(136, 136, 255); }
+.red { color: rgb(255, 0, 0); text-decoration: none; line-height: 14px; font-family: Courier New; font-size: 14px; font-weight: bold; }
+/* ::::: http://orphus.ru/static/styles.css?2 ::::: */
+
+.lang-menu { padding: 0px 6px; }
+.lang-menu-current { background: none repeat scroll 0% 0% rgb(34, 0, 0); color: white; font-weight: bold; }
+body { font-family: arial,sans-serif; }
+img { border: 0px none; }
+form { padding: 0px; margin: 0px; }
+.sidebar { padding: 20px 0px 12px 12px; border-right: 2px solid rgb(211, 211, 211); background: none repeat scroll 0% 0% rgb(238, 238, 238); width: 250px; }
+.sidebar ul { padding: 5px 0px 0px; margin: 0px; clear: both; width: 250px; }
+.sidebar li { position: relative; margin: 0px -4px 0px 0px; padding: 2px 0px 3px 5px; list-style: outside none none; cursor: pointer; }
+.sidebar input { font-size: 100%; font-family: arial,sans-serif; }
+.sidebar h2 { font-family: arial,sans-serif; font-size: 150%; margin: 0px 0px 5px ! important; }
+ul.checked li { background: url('icon_report_processed.gif') no-repeat scroll 0px 3px transparent; padding: 0px 1em 0px 19px; }
+.left_login input { width: 100%; }
+.left_login { width: 95%; }
+.left_login dl { margin: 0px 0px 4px; }
+.left_login dl dt { margin: 0px 0px 2px; }
+.left_login dl dd { margin: 0px; }
+.left_login .left_login_note { font-size: 0.8em; padding: 0px 0px 2px 2em; }
+.js_link { border-bottom: 1px dashed blue; cursor: pointer; }
+h2 { margin: 0px 0px 5px; }
+.install_form { width: auto; border: 2px groove; margin: 0px; }
+.install_form tr { vertical-align: top; }
+.install_form tr.z1 { background: none repeat scroll 0% 0% rgb(248, 248, 248); }
+.install_form tr.z2 { background: none repeat scroll 0% 0% rgb(240, 240, 240); }
+.install_form td.step { font-weight: bold; }
+#ln { color: rgb(0, 99, 156); cursor: pointer; border-bottom: 2px solid rgb(0, 99, 156); }

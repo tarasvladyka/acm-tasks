@@ -1,0 +1,93 @@
+/* ::::: http://mycollege.org.ua/wp-content/themes/constructor/style.css ::::: */
+
+html, body { margin: 0px; padding: 0px; }
+body { min-width: 1000px; line-height: 1.5em; }
+div, ul, ol, li, p, img { margin: 0px; padding: 0px; }
+li ul, li ol { padding-left: 20px; }
+h1 { font-size: 2em; }
+h2 { font-size: 1.8em; }
+h3 { font-size: 1.6em; margin: 12px 0px; }
+a { outline: medium none; text-decoration: none; }
+.alignleft, .left { float: left; }
+.alignright, .right { float: right; }
+.clear { clear: both; }
+.cat-item {  }
+.blogroll {  }
+.box { border-style: solid; border-width: 1px; border-radius: 6px; }
+#body { margin: 0px auto; }
+#wrapper { float: left; width: 100%; }
+#container { margin: 0px; float: left; min-height: 600px; }
+#sidebar { float: left; }
+#header { height: 140px; position: relative; }
+#header .logo { height: 60%; text-transform: uppercase; margin: 0px auto; }
+#header h1 { font: bold 600%/100% Verdana,Tahoma,sans-serif; letter-spacing: -6px; margin: 0px; padding: 0px; }
+#header h2 { display: block; font-size: 1.2em; margin: 0px; padding: 0px 8px; }
+#header-links { margin: 0px 0px 6px; padding: 0px 10px; z-index: 300; overflow: visible ! important; border-bottom-left-radius: 6px; border-bottom-right-radius: 6px; border-style: none solid solid; border-width: 0px 1px 1px; border-top: 0px none; }
+#header-links ul, #header-links li { padding: 0px; margin: 0px; list-style: outside none none; }
+#header-links ul { height: 40px; border-style: none none none dotted; border-width: 0px 0px 0px 1px; }
+.sidebar { padding: 1px; font-size: 1.2em; }
+.sidebar h3 { padding: 4px; }
+.sidebar a { padding: 0px; }
+.sidebar a:hover { text-decoration: underline; }
+.sidebar ul { margin: 0px; }
+.sidebar ul ul { padding: 0px 0px 0px 4px; }
+.sidebar li { padding: 2px; list-style: outside none none; }
+#posts { padding: 10px; }
+.hentry { clear: both; position: relative; width: 100%; margin: 0px 0px 10px; }
+.hentry .title h2 { margin: 0px; font-weight: 700 ! important; font-size: 1.8em; }
+.hentry .title, .pagetitle { padding: 10px 0px 14px 12px; margin-bottom: 12px; }
+.hentry .entry { font-size: 1.2em; line-height: 1.4em; padding: 0px 4px; }
+.hentry .entry h1, .hentry .entry h2, .hentry .entry h3, .hentry .entry h4, .hentry .entry h5, .hentry .entry h6, .hentry .entry ul, .hentry .entry ol { margin-left: 12px; }
+.hentry .entry p { text-indent: 12px; margin-bottom: 4px; }
+.hentry .entry .crop, .hentry .entry img { padding: 4px; border-style: solid; border-width: 1px; border-radius: 4px; }
+.hentry .entry ol, .hentry .entry ul { padding-left: 20px; }
+.hentry .entry ul { list-style: outside none circle; }
+.hentry .entry li { padding: 2px; }
+.hentry .footer { clear: both; }
+.hentry .footer .line {  }
+.navigation { font-size: 1.4em; }
+.navigation div a { display: block; width: auto; height: 32px; margin: 0px 20px; }
+.navigation div.clear { height: 0px; }
+#footer { clear: both; padding: 20px 0px; margin: 0px auto; font-size: 1.2em; }
+#footer a:hover { text-decoration: underline; }
+#footer .copy { padding: 4px 0px 0px; text-align: center; }
+.wp-caption { text-align: center; padding-top: 4px; margin: 10px; border-radius: 3px; }
+.wp-caption a { border: 0px none ! important; }
+.wp-caption img { margin: 0px ! important; padding: 0px ! important; border: 0px none ! important; }
+.wp-caption p.wp-caption-text { font-size: 11px; line-height: 17px; padding: 0px 4px 5px; margin: 0px; }
+/* ::::: http://mycollege.org.ua/?theme-constructor=css&ver=2.8.6 ::::: */
+
+body { font: 62.5%/1.6 Arial,Helvetica,sans-serif; background-color: rgb(255, 255, 255); }
+body, a { color: rgb(51, 51, 51); }
+h1, h2, h3, h4, h5, h6 { font-family: Arial,Helvetica,sans-serif; }
+h1, h2 { color: rgb(255, 102, 0); }
+h3, h4 { color: rgb(255, 119, 17); }
+a:hover { color: rgb(255, 102, 0); }
+.box { border-color: rgb(170, 170, 170); }
+*::-moz-selection { background: none repeat scroll 0% 0% rgb(255, 102, 0); color: rgb(255, 255, 255); }
+.opacity { background: none repeat scroll 0% 0% rgba(255, 255, 255, 0.5); }
+.shadow { box-shadow: 0px 0px 3px rgb(170, 170, 170); }
+#body { width: 1000px; }
+#wrap { background-image: url('header_001.png'); background-repeat: no-repeat; background-position: center top; }
+#wrapper {  }
+#container { width: 760px; margin-right: 240px; border-right: 1px dotted rgb(170, 170, 170); }
+#sidebar { margin-left: -240px; }
+#sidebar { width: 236px; }
+#footer { width: 1000px; }
+#footer_wrap { background-image: url('footer.png'); background-repeat: no-repeat; background-position: right bottom; }
+#header { height: 140px; text-align: left; }
+#header h1 { font: bold 600%/100% Arial,Helvetica,sans-serif; }
+#header h1 a { color: rgb(51, 51, 51); }
+#header h2 { color: rgb(85, 85, 85); }
+#header-links { border-color: rgb(170, 170, 170); }
+#header-links ul { border-color: rgb(170, 170, 170); }
+.wp-caption { color: rgb(51, 51, 51); border: 1px solid rgb(170, 170, 170); background-color: rgb(255, 245, 197); }
+.hentry .title a, .hentry .title span { border-bottom: 3px dotted rgb(255, 153, 51); }
+.hentry .entry a, .hentry .footer a { border-bottom: 1px dotted rgb(51, 51, 51); }
+.hentry .entry a:hover, .hentry .footer a:hover { border-bottom: 1px solid rgb(255, 102, 0); }
+.hentry .entry .crop, .hentry .entry img { border-color: rgb(170, 170, 170); }
+#footer .copy { color: rgb(170, 170, 170); }
+/* ::::: http://mycollege.org.ua/wp-content/themes/constructor/themes/default/style.css?ver=2.8.6 ::::: */
+
+h2 a::before { content: "_"; }
+h1 a::before { content: "_"; }

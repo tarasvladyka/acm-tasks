@@ -1,0 +1,46 @@
+/* ::::: http://acm.lviv.ua/fusion/themes/Brasil-Fusion/styles.css ::::: */
+
+a { color: rgb(0, 85, 153); text-decoration: none; }
+a:hover { color: rgb(50, 186, 114); text-decoration: none; }
+a.side { color: rgb(0, 85, 153); text-decoration: none; }
+a.side:hover { color: rgb(50, 186, 114); text-decoration: none; }
+a.white { color: rgb(0, 19, 200); text-decoration: none; padding: 5px 6px; }
+a.white:hover { color: rgb(255, 255, 255); text-decoration: none; background: none repeat scroll 0% 0% rgb(126, 192, 160); }
+a.footlink { color: rgb(238, 238, 238); text-decoration: none; }
+a.footlink:hover { color: rgb(204, 204, 204); text-decoration: none; }
+body { font-family: Verdana,Tahoma,Arial,sans-serif; font-size: 11px; }
+form { margin: 0px; }
+hr { height: 1px; border: 1px solid rgb(238, 238, 238); }
+hr.side-hr { height: 1px; border: 1px solid rgb(204, 204, 204); }
+td { font-family: Verdana,Tahoma,Arial,sans-serif; font-size: 11px; }
+pre { font-family: Verdana,Tahoma,Arial,sans-serif; font-size: 11px; }
+.alt { color: rgb(85, 85, 85); }
+.all { border: 1px outset rgb(0, 0, 0); margin: 2em auto; }
+.sub-header { font-family: Verdana,Tahoma,Arial,sans-serif; font-size: 11px; color: rgb(85, 85, 85); height: 39px; line-height: 37px; background-color: rgb(241, 250, 7); background-image: url('cellpic.gif'); border-bottom: 1px solid rgb(225, 225, 225); padding-right: 5px; }
+.full-header { font-family: Verdana,Tahoma,Arial,sans-serif; font-size: 11px; color: rgb(170, 170, 170); background-color: rgb(35, 155, 60); background-image: url('header.png'); padding: 15px; }
+.foot-credits { font-family: Verdana,Tahoma,Arial,sans-serif; font-size: 10px; color: rgb(255, 252, 0); height: 25px; background-color: rgb(253, 252, 237); background-image: url('cellpic3.gif'); border-top: 1px solid rgb(204, 204, 204); padding: 5px; }
+.button { font-family: Verdana,Tahoma,Arial,sans-serif; font-size: 10px; color: rgb(51, 51, 51); background-color: rgb(241, 241, 241); height: 20px; border: 1px solid rgb(204, 204, 204); margin-top: 2px; }
+.textbox { font-family: Verdana,Tahoma,Arial,sans-serif; font-size: 10px; color: rgb(51, 51, 51); background-color: rgb(255, 255, 255); border: 1px solid rgb(204, 204, 204); }
+.main-body { font-size: 11px; color: rgb(51, 51, 51); background-color: rgb(253, 252, 237); padding: 4px 4px 5px; }
+.side-body { font-size: 10px; color: rgb(102, 102, 102); background-color: rgb(253, 252, 237); padding: 4px; }
+.main-bg { color: rgb(85, 85, 85); background-color: rgb(245, 250, 184); padding: 10px 5px 15px; }
+.border { border-left: 1px ridge rgb(87, 156, 72); border-right: 1px ridge rgb(87, 156, 72); border-bottom: 1px ridge rgb(87, 156, 72); }
+.left-corn { width: 20px; height: 39px; background-color: rgb(245, 250, 184); background-image: url('left-corn.gif'); background-repeat: no-repeat; }
+.right-corn { width: 20px; height: 39px; background-color: rgb(245, 250, 184); background-image: url('right-corn.gif'); background-repeat: no-repeat; }
+.side-border-left { padding: 10px 5px; background-color: rgb(245, 250, 184); }
+.side-border-right { padding: 10px 5px; background-color: rgb(245, 250, 184); }
+.news-footer { font-size: 10px; color: rgb(85, 85, 85); background-color: rgb(241, 241, 241); border-top: 1px solid rgb(225, 225, 225); padding: 3px 4px 4px; }
+.capmain { font-family: Verdana,Tahoma,Arial,sans-serif; font-size: 11px; font-weight: bold; color: rgb(85, 85, 85); width: 100%; height: 39px; background-color: rgb(241, 250, 7); background-image: url('cellpic.gif'); border-bottom: 1px solid rgb(225, 225, 225); padding: 2px 4px 4px; }
+.scapmain { font-family: Verdana,Tahoma,Arial,sans-serif; font-size: 10px; font-weight: bold; width: 100%; height: 39px; color: rgb(119, 119, 119); background-color: rgb(176, 219, 190); background-image: url('cellpic2.gif'); border-bottom: 1px solid rgb(225, 225, 225); padding: 4px; }
+.tbl-border { color: rgb(85, 85, 85); background-color: rgb(187, 187, 187); }
+.tbl { font-size: 11px; color: rgb(85, 85, 85); background-color: rgb(253, 252, 237); padding: 4px; }
+.tbl1 { font-size: 11px; background-color: rgb(253, 252, 237); padding: 4px; }
+.tbl2 { font-size: 11px; background-color: rgb(251, 248, 202); padding: 4px; }
+.quote { font-size: 11px; color: rgb(85, 85, 85); background-color: rgb(248, 248, 248); padding: 4px; margin: 0px 20px; border: 1px solid rgb(187, 187, 187); }
+.shoutboxname { font-weight: bold; color: rgb(0, 85, 153); background-color: rgb(253, 252, 237); }
+.shoutbox { color: rgb(119, 119, 119); background-color: rgb(253, 252, 237); }
+.shoutboxdate { font-size: 10px; color: rgb(136, 136, 136); background-color: rgb(253, 252, 237); }
+.small { font-size: 10px; font-weight: normal; }
+.small2 { font-size: 10px; font-weight: normal; color: rgb(85, 85, 85); }
+.side-small { font-size: 10px; font-weight: normal; color: rgb(85, 85, 85); background-color: rgb(253, 252, 237); }
+.side-label { color: rgb(85, 85, 85); background-color: rgb(205, 235, 220); padding: 2px 2px 3px; }

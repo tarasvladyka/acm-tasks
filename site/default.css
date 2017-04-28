@@ -1,0 +1,42 @@
+/* ::::: http://gamecontester.com/Content/screen.css ::::: */
+
+BODY { font-family: Verdana,Geneva,sans-serif; font-size: 70%; color: rgb(68, 68, 68); background: url('header.jpg') no-repeat scroll 50% 0px white; text-align: center; }
+BODY INPUT { font-family: "Courier New",Courier,monospace; font-weight: bold; font-size: 14px; color: rgb(68, 68, 68); }
+BODY A { color: rgb(98, 165, 218); text-decoration: none; }
+BODY A:hover, BODY A:active { color: rgb(41, 115, 173); text-decoration: underline; }
+BODY > DIV { text-align: left; width: 960px; margin: 0px auto; }
+BODY > DIV .head { position: relative; height: 108px; }
+BODY > DIV .head > * { position: absolute; display: block; }
+BODY > DIV .head > A { left: 50px; top: 0px; width: 375px; height: 50px; z-index: 1; cursor: pointer; outline: medium none; }
+BODY > DIV .head > SPAN { left: 791px; top: 57px; }
+BODY > DIV .head > SPAN INPUT { width: 124px; padding-left: 2px; background: none repeat scroll 0% 0% transparent; border: medium none; outline: medium none; }
+BODY > DIV .head > SPAN INPUT:active, BODY > DIV .head > SPAN INPUT:focus, BODY > DIV .head > SPAN INPUT.has-text { background: none repeat scroll 0% 0% white; }
+BODY > DIV .head > LI { list-style: outside none none; top: 103px; z-index: 7; }
+BODY > DIV .head > LI A { display: inline-block; letter-spacing: -1px; padding: 0px 13px; font-size: 14px; line-height: 30px; text-transform: uppercase; text-decoration: none; }
+BODY > DIV .head > LI A:hover { background: url('menu-hover.png') no-repeat scroll 0px 100% transparent; }
+BODY > DIV .head > DIV { top: 50px; left: 150px; }
+BODY > DIV .head > DIV FORM { background: url('circle-with-line.png') no-repeat scroll 0px 0px transparent; padding: 3px 30px; }
+BODY > DIV .head > DIV FORM INPUT { width: 90px; border: 1px solid rgb(238, 238, 238); padding: 2px; letter-spacing: -1px; border-radius: 3px; }
+BODY > DIV .head > DIV FORM INPUT[type="submit"] { width: 15px; background: none repeat scroll 0% 0% transparent; border: medium none; cursor: pointer; }
+BODY > DIV .head > DIV FORM INPUT[type="submit"]:active { color: rgb(98, 165, 218); }
+BODY > DIV .head > DIV FORM DIV { margin: 7px 0px 0px; padding-left: 5px; }
+BODY > DIV .body { padding: 50px 198px 232px 10px; position: relative; min-height: 350px; }
+BODY > DIV .body h1, BODY > DIV .body h2, BODY > DIV .body h3, BODY > DIV .body h4, BODY > DIV .body h5, BODY > DIV .body h6 { font-size: 14px; }
+BODY > DIV .body .sidebar { position: absolute; right: 25px; top: 0px; width: 170px; margin-top: 0px; list-style: outside none none; text-align: right; font-family: "Courier New",Courier,monospace; font-weight: bold; font-size: 14px; }
+BODY > DIV .body .sidebar h3 { color: rgb(233, 55, 3); text-transform: uppercase; letter-spacing: -1px; font-family: Verdana,Geneva,sans-serif; font-weight: normal; font-size: 14px; margin: 0px; padding: 0px; }
+BODY > DIV .body .sidebar h4 { margin: 5px 0px; padding: 0px; font-weight: bold; }
+BODY > DIV .body .sidebar A { padding: 0px; margin: 0px; font-weight: bold; text-decoration: none; display: block; }
+BODY > DIV .body .news-control { margin: 25px 0px; }
+BODY > DIV .body .news-control h2 { background: url('circle-with-line.png') no-repeat scroll 0px 50% transparent; margin: 5px 0px; padding: 0px 0px 0px 30px; line-height: 33px; font-size: 14px; font-family: "Courier New",Courier,monospace; font-weight: bold; text-transform: lowercase; }
+BODY > DIV .body .news-control h3 { background: url('circle.png') no-repeat scroll 0px 50% transparent; padding-left: 12px; text-decoration: underline; margin-bottom: 0px; }
+BODY > DIV .body .news-control h3 + SPAN { text-decoration: none; display: block; padding-left: 12px; }
+BODY > DIV .body .news-control h3 + SPAN + P { padding-left: 12px; margin: 5px 0px 10px; }
+BODY > DIV .body .news-control h3 + SPAN + P + H3 { margin-top: 30px; }
+BODY > DIV .body .news-control > A { padding-left: 12px; }
+BODY > DIV .subbar { list-style: outside none none; background: url('subbar.jpg') no-repeat scroll 0px 50% transparent; position: absolute; height: 214px; width: 960px; bottom: 0px; left: 0px; }
+BODY > DIV .subbar .colA { padding: 0px 15px; }
+BODY > DIV .subbar .colA H2 { font-size: 12px; text-transform: lowercase; padding: 8px 0px; }
+BODY > DIV .subbar .colB { position: absolute; left: 734px; top: 0px; }
+BODY > DIV .subbar .colB H3 { color: rgb(5, 78, 161); font-size: 14px; font-weight: bold; text-transform: uppercase; letter-spacing: -1px; margin: 0px 0px 6px; padding: 0px; }
+BODY > DIV .subbar .colB DIV { margin-left: 133px; line-height: 15px; text-transform: lowercase; }
+BODY > DIV .footer { font-size: 11px; text-align: center; }
