@@ -1,8 +1,0 @@
-/* ::::: http://www.ukraine.com.ua/static/parking/style.css ::::: */
-
-body { margin: 0px; padding: 0px; width: 100%; font: 12px Tahoma; }
-h1 { font-size: 20px; color: rgb(31, 132, 255); margin-bottom: 20px; margin-top: 0px; font-weight: normal; line-height: 30px; }
-a { color: rgb(24, 115, 180); }
-div.container { width: 900px; margin: 0px auto; padding-top: 50px; background: url('cable.gif') no-repeat scroll center top transparent; height: 120px; }
-div.content { margin-top: 100px; padding-bottom: 50px; overflow: hidden; border-bottom: 1px solid silver; }
-div.text { float: left; width: 580px; line-height: 150%; }
