@@ -119,8 +119,6 @@ public class task1010 {
             }
         }
         System.out.println(-1);
-
-
     }
     public static boolean isSimple(int n){
         // всі прості числа непарні (крім числа 2)

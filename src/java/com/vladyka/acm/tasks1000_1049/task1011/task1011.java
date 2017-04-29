@@ -47,10 +47,7 @@ import java.util.*;
 
 public class task1011 {
     public static void main(String[] args) throws IOException{
-        //BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-
         /*todo
-        через buffered reader читати
         допустимо згладили один рядок, чи згладжувати наступний відповідно до попереднього?
         чи не враховувати його, а брати до уваги первинний рядок масиву
         */
@@ -63,27 +60,16 @@ public class task1011 {
         System.out.print("enter width: ");
         int width = scanner.nextInt();     // 1 <= width <= 250
 
-
-
         Image image = new Image(height, width, radius);
         image.randomFill();
-
-
-
         System.out.println("Image before filtering");
         image.print();
-
-
 
         image.filterImage();
         System.out.println("Image after filtering");
         image.print();
         System.out.println("Max filter is:" + image.getMaxFilter());
-
     }
-
-
-
 }
 
 

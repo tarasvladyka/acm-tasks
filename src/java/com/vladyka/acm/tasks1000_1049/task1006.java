@@ -59,9 +59,7 @@ public class task1006 {
         }
 
         System.out.println((sumP - sumNep) % 11 == 0);
-
         // ознаки подільності на 11 (3 ознаки всього)
-
         System.out.println("time in ms: " + (Calendar.getInstance().getTimeInMillis() - startMs));
     }
 

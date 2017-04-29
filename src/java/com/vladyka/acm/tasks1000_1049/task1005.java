@@ -37,7 +37,6 @@ package com.vladyka.acm.tasks1000_1049;
 1
 */
 
-
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -46,10 +45,7 @@ import java.util.Calendar;
 public class task1005 {
     public static void main(String[] args) throws IOException {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-
-
         int number = Integer.parseInt(reader.readLine());
-
         Calendar startTime = Calendar.getInstance();
         long startMs = startTime.getTimeInMillis();
 
@@ -59,9 +55,7 @@ public class task1005 {
                 iterator = i;
                 break;
             }
-
         }
-
         StringBuffer binaryData = new StringBuffer("01");
         for (int i = 1; i < iterator; i++) {
             binaryData.append(inverseString(binaryData));

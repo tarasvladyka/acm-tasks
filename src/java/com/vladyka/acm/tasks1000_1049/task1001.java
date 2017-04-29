@@ -42,7 +42,6 @@ public class task1001 {
         for (int i = 0; i < k; i++) {
             result *= a;
         }
-
         System.out.println(result);
     }
 }

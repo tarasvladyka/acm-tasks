@@ -64,7 +64,6 @@ public class task1004 {
                 }
             }
         }
-
         System.out.println(nSimpleNumber * nSimpleNumber);
         System.out.println("time in ms: " + (Calendar.getInstance().getTimeInMillis() - startMs));
     }

@@ -40,6 +40,5 @@ public class task1000 {
         int b = Integer.parseInt(reader.readLine());
 
         System.out.println(b + " " + a);
-
     }
 }

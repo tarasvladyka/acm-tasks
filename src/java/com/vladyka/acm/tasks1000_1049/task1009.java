@@ -41,8 +41,6 @@ package com.vladyka.acm.tasks1000_1049;
 Приклад виведення 4
 4
 */
-
-
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -59,9 +57,8 @@ public class task1009 {
 
         while (list.size() != 1) {
             list.removeFirst();
-
-            // add to end element with deleting it on start
-            list.add(list.removeFirst());
+            int first = list.removeFirst();
+            list.add(first);
         }
         System.out.println(list.get(0));
     }
