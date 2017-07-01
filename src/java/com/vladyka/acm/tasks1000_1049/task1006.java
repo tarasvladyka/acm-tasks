@@ -33,36 +33,27 @@ Yes
 No
 */
 
-import java.io.BufferedReader;
 import java.io.IOException;
-import java.io.InputStreamReader;
 import java.util.Calendar;
-
+import java.util.Scanner;
 
 public class task1006 {
     public static void main(String[] args) throws IOException {
-        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-
-        String longNumber = reader.readLine();
-        Calendar startTime = Calendar.getInstance();
-        long startMs = startTime.getTimeInMillis();
+        Scanner scanner = new Scanner(System.in);
+        String longNumber = scanner.next();
 
         int sumNep = 0;
         int sumP = 0;
 
         for (int i = 0; i < longNumber.length(); i++) {
-            int digit = Integer.valueOf(longNumber.substring(i,i + 1));
+            int digit = Integer.valueOf(longNumber.substring(i, i + 1));
             if (i % 2 != 0)
                 sumP += digit;
             else
                 sumNep += digit;
         }
-
-        System.out.println((sumP - sumNep) % 11 == 0);
-        // ознаки подільності на 11 (3 ознаки всього)
-        System.out.println("time in ms: " + (Calendar.getInstance().getTimeInMillis() - startMs));
+        System.out.println(((sumP - sumNep) % 11 == 0) ? "Yes" : "No");
     }
-
 }
 
 

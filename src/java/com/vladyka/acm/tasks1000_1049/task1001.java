@@ -27,16 +27,14 @@ package com.vladyka.acm.tasks1000_1049;
 8
 */
 
-import java.io.BufferedReader;
 import java.io.IOException;
-import java.io.InputStreamReader;
+import java.util.Scanner;
 
 public class task1001 {
     public static void main(String[] args) throws IOException{
-        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-
-        int a = Integer.parseInt(reader.readLine());
-        int k = Integer.parseInt(reader.readLine());
+        Scanner scanner = new Scanner(System.in);
+        int a = scanner.nextInt();
+        int k = scanner.nextInt();
 
         int result = 1;
         for (int i = 0; i < k; i++) {

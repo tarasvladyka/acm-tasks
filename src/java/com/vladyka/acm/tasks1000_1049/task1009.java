@@ -41,16 +41,15 @@ package com.vladyka.acm.tasks1000_1049;
 Приклад виведення 4
 4
 */
-import java.io.BufferedReader;
+
 import java.io.IOException;
-import java.io.InputStreamReader;
 import java.util.LinkedList;
+import java.util.Scanner;
 
 public class task1009 {
     public static void main(String[] args) throws IOException {
-        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-
-        int n = Integer.parseInt(reader.readLine());
+        Scanner scanner = new Scanner(System.in);
+        int n = scanner.nextInt();
         LinkedList<Integer> list = new LinkedList<Integer>();
 
         for (int i = 1; i <= n; i++) list.add(i);

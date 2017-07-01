@@ -37,17 +37,13 @@ package com.vladyka.acm.tasks1000_1049;
 1
 */
 
-import java.io.BufferedReader;
 import java.io.IOException;
-import java.io.InputStreamReader;
-import java.util.Calendar;
+import java.util.Scanner;
 
 public class task1005 {
     public static void main(String[] args) throws IOException {
-        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-        int number = Integer.parseInt(reader.readLine());
-        Calendar startTime = Calendar.getInstance();
-        long startMs = startTime.getTimeInMillis();
+        Scanner scanner = new Scanner(System.in);
+        int number = scanner.nextInt();
 
         int iterator = 0;
         for (int i = 0; i <= 31; i++) {
@@ -60,9 +56,7 @@ public class task1005 {
         for (int i = 1; i < iterator; i++) {
             binaryData.append(inverseString(binaryData));
         }
-
         System.out.println(binaryData.charAt(number - 1));
-        System.out.println("time in ms: " + (Calendar.getInstance().getTimeInMillis() - startMs));
     }
     public static StringBuffer inverseString(StringBuffer str) {
         StringBuffer result = new StringBuffer();

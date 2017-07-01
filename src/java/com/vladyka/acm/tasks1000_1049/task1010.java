@@ -1,47 +1,45 @@
 package com.vladyka.acm.tasks1000_1049;
 
-/*
-1010 - Остання проблема
-Ліміт часу: 1 секунд
-Ліміт пам'яті: 3000 K
-Ліміт виведення: 2 K
+/**
+ * 1010 - Остання проблема
+ Ліміт часу: 1 секунд
+ Ліміт пам'яті: 3000 K
+ Ліміт виведення: 2 K
 
-Завдання
-Ваше завдання – визначити чи дане число N можна представити у вигляді суми двох простих чисел.
+ Завдання
+ Ваше завдання – визначити чи дане число N можна представити у вигляді суми двох простих чисел.
 
-Вхідні дані
-В єдиному рядку записане єдине число N (1 <= N <= 1000000).
+ Вхідні дані
+ В єдиному рядку записане єдине число N (1 <= N <= 1000000).
 
-Вихідні дані
-Cума двох простих чисел, що рівна n, або -1, якщо такої не існує.
-В сумі перше число не більше другого і якщо існує декілька таких можливих сум – вивести ту,
-в якої перший доданок найменший.
+ Вихідні дані
+ Cума двох простих чисел, що рівна n, або -1, якщо такої не існує.
+ В сумі перше число не більше другого і якщо існує декілька таких можливих сум – вивести ту,
+ в якої перший доданок найменший.
 
-Приклад введення 1
-9
-Приклад виведення 1
-2+7
+ Приклад введення 1
+ 9
+ Приклад виведення 1
+ 2+7
 
-Приклад введення 2
-10
-Приклад виведення 2
-3+7
+ Приклад введення 2
+ 10
+ Приклад виведення 2
+ 3+7
 
-Приклад введення 3
-11
-Приклад виведення 3
--1
-
+ Приклад введення 3
+ 11
+ Приклад виведення 3
+ -1
 */
 
-/*
-todo читання simples.txt який містить прості числа і запис boolean в інший файл
+
+
+// TODO:
+/* читання simples.txt який містить прості числа і запис boolean в інший файл
 аналіз іншого файлу, якшо зустрінемо false, вивід повідомлення на екран,
 що ф-ція перевірки числа на простоту працює некоректно
 */
-
-
-
 
 import java.io.*;
 import java.util.Calendar;
@@ -51,20 +49,16 @@ public class task1010 {
     public static void main(String[] args) throws IOException {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
-
-
         int n = Integer.parseInt(reader.readLine());
         Calendar startTime = Calendar.getInstance();
         long startMs = startTime.getTimeInMillis();
 
         solver(n);
 
-
         System.out.println("time in ms: " + (Calendar.getInstance().getTimeInMillis() - startMs));
     }
 
-    public static void solver(int n){
-
+    public static void solver(int n) {
         /*якщо дане число дорівнює 1,2 або 3 то немає сенсу
         шукати для них суму двох простих, бо як таких їх не існує*/
         if (n == 1 || n == 2 || n == 3) {
@@ -77,7 +71,7 @@ public class task1010 {
         тобто потрібно перевірити, чи число менше від даного на 2 є простим,
         якшо воно не просте, то таку суму неможливо утворити*/
 
-        if ( isSimple(n) ) {
+        if (isSimple(n)) {
             if (isSimple(n - 2))
                 System.out.println(2 + " + " + (n - 2));
             else
@@ -90,7 +84,7 @@ public class task1010 {
         двох чисел (число / 2 + число / 2)
         перевіримо це
          */
-        if ( isSimple(n / 2)) {
+        if (isSimple(n / 2)) {
             System.out.println(n / 2 + " + " + n / 2);
             return;
         }
@@ -108,11 +102,11 @@ public class task1010 {
         */
 
         int stopNumber = n / 2 + 2;
-        int startNumber = (n % 2) == 0 ? (n - 3)  : (n - 2);
+        int startNumber = (n % 2) == 0 ? (n - 3) : (n - 2);
 
         for (int i = startNumber; i >= stopNumber; i -= 2) {
             if (isSimple(i)) {
-                if (isSimple(n-i)) {
+                if (isSimple(n - i)) {
                     System.out.println((n - i) + " + " + i);
                     return;
                 }
@@ -120,7 +114,8 @@ public class task1010 {
         }
         System.out.println(-1);
     }
-    public static boolean isSimple(int n){
+
+    public static boolean isSimple(int n) {
         // всі прості числа непарні (крім числа 2)
         if (n % 2 == 0 && n != 2)
             return false;
@@ -129,7 +124,7 @@ public class task1010 {
         починаємо перевіряти з числа 3
         бо воно має найвищу потенційну ймовірність бути цілочисельним дільником нашого числа
         і йдемо аж до n/3 - найбільший потенційно можливий дільник*/
-               for (int i = 3; i <= n / 3; i++) {
+        for (int i = 3; i <= n / 3; i++) {
             if (n % i == 0)
                 return false;
         }

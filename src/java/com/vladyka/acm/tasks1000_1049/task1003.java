@@ -36,20 +36,18 @@ N - номер пари рукавичок (1 <= K <= 200, 1 <= N <= 20000) ро
 15 43
 Приклад виведення 3
 3 13
-
 */
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-
+import java.util.Scanner;
 
 public class task1003 {
     public static void main(String[] args) throws IOException{
-        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-
-        int k = Integer.parseInt(reader.readLine());
-        int n = Integer.parseInt(reader.readLine());
+        Scanner scanner = new Scanner(System.in);
+        int k = scanner.nextInt();
+        int n = scanner.nextInt();
 
         int numOfWorker = n / k + 1;
         int numOfPair = n - (numOfWorker - 1) * k;

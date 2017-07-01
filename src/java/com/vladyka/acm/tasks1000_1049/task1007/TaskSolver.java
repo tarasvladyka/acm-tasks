@@ -17,7 +17,6 @@ public class TaskSolver {
         }
         try {
             for (int currentNumber : sequence) {
-                //speedup!
                 List<Integer> seqWithoutCurrNum = new LinkedList<>(
                         sequence.subList(0, sequence.indexOf(currentNumber)));
                 seqWithoutCurrNum.remove(new Integer(currentNumber));
@@ -27,9 +26,9 @@ public class TaskSolver {
 
                 checkNumber(seqWithoutCurrNum, currentNumber, whyList);
             }
-            System.out.println("IS SUPER");
+            System.out.println("Yes");
         } catch (NotSuperSequenceException e) {
-            System.out.println("NOT SUPER[CAUSE " + e.getMessage() + "]");
+            System.out.println("No[CAUSE " + e.getMessage() + "]");
         }
     }
 
@@ -42,7 +41,6 @@ public class TaskSolver {
     }
 
     private static void checkNumber(List<Integer> sequence, int targetNumber, List<Integer> whyList) {
-        //speedup!
         if (sequence.size() == 0 || targetNumber < 0)
             return;
         if (targetNumber == 0) {

@@ -1,5 +1,5 @@
 package com.vladyka.acm.tasks1000_1049.task1011;
-/*
+/**
 1011 - Медіанний фільтр
 
 Ліміт часу: 1,5 секунд
@@ -45,30 +45,27 @@ package com.vladyka.acm.tasks1000_1049.task1011;
 import java.io.IOException;
 import java.util.*;
 
-public class task1011 {
+public class Main {
+    public static final Scanner scanner = new Scanner(System.in);
     public static void main(String[] args) throws IOException{
-        /*todo
-        допустимо згладили один рядок, чи згладжувати наступний відповідно до попереднього?
-        чи не враховувати його, а брати до уваги первинний рядок масиву
-        */
-        Scanner scanner = new Scanner(System.in);
-
-        System.out.print("enter radius: ");
         int radius = scanner.nextInt();    // 1 <= radius <= 20
-        System.out.print("enter height: ");
         int height = scanner.nextInt();    // 1 <= height <= 400
-        System.out.print("enter width: ");
         int width = scanner.nextInt();     // 1 <= width <= 250
 
-        Image image = new Image(height, width, radius);
-        image.randomFill();
-        System.out.println("Image before filtering");
-        image.print();
+        Image image = new Image(height, width);
+        System.out.println("Fill image");
+        image.manualFill();
+        System.out.println("Image before filtering:");
+        System.out.println(image);
 
-        image.filterImage();
-        System.out.println("Image after filtering");
-        image.print();
-        System.out.println("Max filter is:" + image.getMaxFilter());
+        ImageFilter filter = new ImageFilter();
+        filter.setRadius(radius);
+
+        System.out.println("Image after filtering: ");
+        Image filteredImage = filter.filterImage(image);
+        System.out.println(filteredImage);
+
+        System.out.println("Max mediana filter is: " + filteredImage.getMaxValue());
     }
 }
 

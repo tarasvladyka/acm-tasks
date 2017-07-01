@@ -5,83 +5,69 @@ import java.util.*;
 public class Image {
     private int height;
     private int width;
-    private int radius;
+    private int[][] data;
 
-    private List<List<Integer>> array = new LinkedList<List<Integer>>();
-
-    public Image(int height, int width, int radius) {
+    public Image(int height, int width) {
         this.height = height;
         this.width = width;
-        this.radius = radius;
-    }
-    private int getMediana(int i, int j) {
-        LinkedList<Integer> row = new LinkedList<Integer>();
-        for (int m = i - this.radius; m <= i + this.radius; m++) {
-            for (int n = j - this.radius; n <= j + this.radius; n++) {
-                if (isCorrectIndex(m, n))
-                    row.add(this.array.get(m).get(n));
-                else
-                    row.add(0);
-            }
-        }
-        Collections.sort(row); // todo sort using comparator
-        return row.get(array.size() / 2);
+        data = new int[height][width];
     }
 
-    private boolean isCorrectIndex(int m, int n) {
-        return  !(m < 0 || n < 0 || n >= width || m >= height);
+    @Override
+    public String toString() {
+        String result = "";
+        for(int[] row : data){
+            for(int elem : row){
+               result += elem + " ";
+            }
+            result += "\n";
+        }
+        return result;
     }
 
-    public int getMaxFilter() {
-        int max = array.get(0).get(0);
-        for (int i = 0; i < height; i++) {
-            for (int j = 1; j < width; j++) {
-                if (array.get(i).get(j) > max)
-                    max = array.get(i).get(j);
-            }
-        }
+    public int getMaxValue(){
+        int max = data[0][0];
+        for(int i = 0; i < height; i++)
+            for (int j = 0; j < width; j++)
+                if(data[i][j] > max)
+                    max = data[i][j];
         return max;
     }
 
-    public void print() {
+    public void manualFill() {
+        Scanner scanner = Main.scanner;
         for (int i = 0; i < height; i++) {
             for (int j = 0; j < width; j++)
-                System.out.print(this.array.get(i).get(j) + " ");
-            System.out.println();
-        }
-    }
-
-    public void manualFill() {
-        Scanner scanner = new Scanner(System.in);
-        for (int i = 0; i < this.height; i++) {
-            LinkedList<Integer> row = new LinkedList<Integer>();
-            for (int j = 0; j < this.width; j++)
-                row.add(scanner.nextInt());
-            this.array.add(row);
+                data[i][j] = scanner.nextInt();
         }
     }
     public void randomFill() {
         Random rand = new Random();
-        for (int i = 0; i < this.height; i++) {
-            LinkedList<Integer> row = new LinkedList<Integer>();
-            for (int j = 0; j < this.width; j++)
-                row.add(rand.nextInt(256));
-            this.array.add(row);
+        for (int i = 0; i < height; i++) {
+            for (int j = 0; j < width; j++)
+                data[i][j] = rand.nextInt(256);
         }
     }
-    public void clear () {
-        this.array.clear();
+    public int getElement(int rowIndex, int colIndex){
+        return data[rowIndex][colIndex];
+    }
+    public void setElement(int rowIndex, int colIndex, int value){
+        data[rowIndex][colIndex] = value;
     }
 
-    public void filterImage() {
-        List<List<Integer>> filteredArray = new LinkedList<List<Integer>>();
-        for (int i = 0; i < this.height; i++) {
-            LinkedList<Integer> row = new LinkedList<Integer>();
-            for (int j = 0; j < this.width; j++) {
-                row.add(getMediana(i, j));
-            }
-            filteredArray.add(row);
-        }
-        this.array = filteredArray;
+    public int getHeight() {
+        return height;
+    }
+
+    public void setHeight(int height) {
+        this.height = height;
+    }
+
+    public int getWidth() {
+        return width;
+    }
+
+    public void setWidth(int width) {
+        this.width = width;
     }
 }

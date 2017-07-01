@@ -30,23 +30,17 @@ package com.vladyka.acm.tasks1000_1049;
 5
 Приклад виведення 3
 121
-
 */
-import java.io.BufferedReader;
+
 import java.io.IOException;
-import java.io.InputStreamReader;
 import java.util.Calendar;
+import java.util.Scanner;
 
 public class task1004 {
     public static void main(String[] args) throws IOException {
-        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-
-        int indexOfSimpleNumber = Integer.parseInt(reader.readLine());
-
-        Calendar startTime = Calendar.getInstance();
-        long startMs = startTime.getTimeInMillis();
+        Scanner scanner = new Scanner(System.in);
+        int indexOfSimpleNumber = scanner.nextInt();
         int nSimpleNumber = 1;
-
         int count = 0;
         for (int i = 2; i <= 1000; i++) {
             boolean isSimple = true;
@@ -65,7 +59,6 @@ public class task1004 {
             }
         }
         System.out.println(nSimpleNumber * nSimpleNumber);
-        System.out.println("time in ms: " + (Calendar.getInstance().getTimeInMillis() - startMs));
     }
 }
 
