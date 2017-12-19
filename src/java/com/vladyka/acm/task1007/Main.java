@@ -1,4 +1,4 @@
-package com.vladyka.acm.tasks1000_1049.task1007;
+package com.vladyka.acm.task1007;
 /**
 1007 - Супер послідовність
 
@@ -44,7 +44,6 @@ No
 
 
 import java.util.List;
-import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {

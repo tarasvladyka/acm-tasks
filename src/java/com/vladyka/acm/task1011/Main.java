@@ -1,4 +1,4 @@
-package com.vladyka.acm.tasks1000_1049.task1011;
+package com.vladyka.acm.task1011;
 /**
 1011 - Медіанний фільтр
 

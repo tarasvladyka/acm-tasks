@@ -1,4 +1,4 @@
-package com.vladyka.acm.tasks1000_1049;
+package com.vladyka.acm;
 /**
 1005 - 0-1 проблема
 

@@ -1,4 +1,4 @@
-package com.vladyka.acm.tasks1000_1049.task1007;
+package com.vladyka.acm.task1007;
 
 import java.util.LinkedList;
 import java.util.List;

@@ -1,4 +1,4 @@
-package com.vladyka.acm.tasks1000_1049;
+package com.vladyka.acm;
 /**
 1001 - A in power k
 
