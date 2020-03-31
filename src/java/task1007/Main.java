@@ -1,4 +1,4 @@
-package com.vladyka.acm.task1007;
+package task1007;
 /**
 1007 - Супер послідовність
 

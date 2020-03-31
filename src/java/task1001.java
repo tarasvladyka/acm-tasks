@@ -1,4 +1,3 @@
-package com.vladyka.acm;
 /**
 1001 - A in power k
 

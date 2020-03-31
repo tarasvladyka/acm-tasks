@@ -1,5 +1,3 @@
-package com.vladyka.acm;
-
 /**
 1009 - Супер карти
 

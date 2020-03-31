@@ -1,4 +1,3 @@
-package com.vladyka.acm;
 /**
 1004 - Супер проста проблема
 

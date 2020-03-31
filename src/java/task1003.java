@@ -1,4 +1,3 @@
-package com.vladyka.acm;
 /**
 1003 - Рукавички
 

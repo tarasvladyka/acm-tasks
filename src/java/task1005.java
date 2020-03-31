@@ -1,4 +1,3 @@
-package com.vladyka.acm;
 /**
 1005 - 0-1 проблема
 

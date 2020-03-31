@@ -1,4 +1,4 @@
-package com.vladyka.acm.task1011;
+package task1011;
 
 import java.util.*;
 
