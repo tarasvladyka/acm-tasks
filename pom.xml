@@ -6,4 +6,5 @@
 
     <groupId>acm</groupId>
     <artifactId>acm-tasks</artifactId>
+    <version>1.0</version>
 </project>
