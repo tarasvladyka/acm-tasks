@@ -6,7 +6,7 @@ Project contains solutions for  [algorithmical tasks](http://acm.lviv.ua/fusion/
 In order to run this application you will need:
 
 - Java
-- JDK 8
+- JDK 8 or later
 - Maven 3.3 or later	
 
 ### Run
