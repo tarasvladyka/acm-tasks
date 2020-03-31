@@ -12,4 +12,4 @@ In order to run this application you will need:
 ### Run
  -  Each solution placed either in separate `.java` file which named with task number, or in separate package
  - You just need to find `main` method and run it. 
- - On top of the `.java ` file, you will find task description and sample inputs and expected outputs
+ - On top of the `.java ` file, you will find comment, containing task description and sample inputs and expected outputs
