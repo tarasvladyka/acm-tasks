@@ -1,5 +1,4 @@
-# Solutions for algorithmical tasks of acm.lviv.ua
-Project contains solutions for  [algorithmical tasks](http://acm.lviv.ua/fusion/viewpage.php?page_id=22 "link to tasks")
+## Project contains solutions for  [algorithmical tasks](http://acm.lviv.ua/fusion/viewpage.php?page_id=22 "link to tasks")
 
 ## Getting started
 ### Prerequisites
